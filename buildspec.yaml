@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      # Clone the Git repository
+      
       - git clone https://github.com/captain-omkar/manifest.git
       - cd manifest
       - ls
