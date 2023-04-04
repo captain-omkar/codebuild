@@ -1,1 +1,18 @@
+version: 0.2
 
+phases:
+  build:
+    commands:
+      # Clone the Git repository
+      - git clone https://github.com/captain-omkar/manifest.git
+      - cd manifest
+      - ls
+      
+      # Add a file to the repository
+      - echo "Hello, world!" > new_file.txt
+      - ls
+      - git add .
+      
+      # Commit and push the changes
+      - git commit -m "Added new_file.txt"
+      - git push origin master
