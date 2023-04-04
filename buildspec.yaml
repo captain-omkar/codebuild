@@ -17,4 +17,4 @@ phases:
       
       # Commit and push the changes
       - git commit -m "Added new_file.txt"
-      - git push origin master
+      - git push 
