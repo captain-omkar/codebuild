@@ -11,6 +11,8 @@ phases:
       # Add a file to the repository
       - echo "Hello, world!" > new_file.txt
       - ls
+      - git config --global user.email "omkarchavanbldea@gmail.com"
+      - git config --global user.name "captain-omkar"
       - git add .
       
       # Commit and push the changes
