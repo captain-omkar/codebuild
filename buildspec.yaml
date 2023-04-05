@@ -17,4 +17,5 @@ phases:
       
       # Commit and push the changes
       - git commit -m "Added new_file.txt"
+      - git remote -v
       - git push 
