@@ -11,6 +11,7 @@ phases:
       # Add a file to the repository
       - echo "Hello, world!" > new_file.txt
       - ls
+      - git remote set-url origin https://captain-omkar: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@github.com/captain-omkar/manifest.git
       - git config --global user.email "omkarchavanbldea@gmail.com"
       - git config --global user.name "captain-omkar"
       - git add .
