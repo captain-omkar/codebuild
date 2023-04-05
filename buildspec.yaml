@@ -5,3 +5,9 @@ phases:
     commands:
       
       - git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/loco-manifest -c credential.helper='!aws codecommit credential-helper $@' -c credential.UseHttpPath=true
+      - cd loco-manifest
+      - echo "Hello, world!" > hello.txt
+      - ls
+      - git add .
+      - git commit -m "addedd"
+      - git push
