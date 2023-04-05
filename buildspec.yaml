@@ -4,19 +4,4 @@ phases:
   build:
     commands:
       
-      - git clone https://captain-omkar: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@github.com/captain-omkar/manifest.git manifest
-      - cd manifest
-      - ls
-      
-      # Add a file to the repository
-      - echo "Hello, world!" > new_file.txt
-      - ls
-      - git remote set-url origin https://captain-omkar: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@github.com/captain-omkar/manifest.git
-      - git config --global user.email "omkarchavanbldea@gmail.com"
-      - git config --global user.name "captain-omkar"
-      - git add .
-      
-      # Commit and push the changes
-      - git commit -m "Added new_file.txt"
-      - git remote -v
-      - git push 
+      - git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/loco-manifest -c credential.helper='!aws codecommit credential-helper $@' -c credential.UseHttpPath=true
